@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+original_files/README.txt
+original_files/project2/
+original_files/project3/
+original_files/project4/
