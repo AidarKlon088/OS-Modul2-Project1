@@ -1,0 +1,12 @@
+test_fcfs (test_scheduler.SchedulerTests.test_fcfs) ... ok
+test_input_file (test_scheduler.SchedulerTests.test_input_file) ... ok
+test_mlfq (test_scheduler.SchedulerTests.test_mlfq) ... ok
+test_priority (test_scheduler.SchedulerTests.test_priority) ... ok
+test_round_robin (test_scheduler.SchedulerTests.test_round_robin) ... ok
+test_sjf (test_scheduler.SchedulerTests.test_sjf) ... ok
+test_srtf (test_scheduler.SchedulerTests.test_srtf) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.007s
+
+OK

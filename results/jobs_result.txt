@@ -1,0 +1,67 @@
+
+Dataset: original_files/project1/jobs.txt
+Processes: 6
+
+========== FCFS ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |      7 |       0 |          7
+P2  |     7 |     11 |       5 |          9
+P3  |    11 |     12 |       8 |          9
+P4  |    12 |     18 |       7 |         13
+P5  |    18 |     21 |      12 |         15
+P6  |    21 |     23 |      13 |         15
+
+Average waiting: 7.50
+Average turnaround: 11.33
+
+Gantt chart:
+P1[0-7] P2[7-11] P3[11-12] P4[12-18] P5[18-21] P6[21-23]
+
+========== SJF ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |      7 |       0 |          7
+P3  |     7 |      8 |       4 |          5
+P6  |     8 |     10 |       0 |          2
+P5  |    10 |     13 |       4 |          7
+P2  |    13 |     17 |      11 |         15
+P4  |    17 |     23 |      12 |         18
+
+Average waiting: 5.17
+Average turnaround: 9.00
+
+Gantt chart:
+P1[0-7] P3[7-8] P6[8-10] P5[10-13] P2[13-17] P4[17-23]
+
+========== ROUND ROBIN (q=2) ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |     21 |      14 |         21
+P2  |     2 |      9 |       3 |          7
+P3  |     6 |      7 |       3 |          4
+P4  |     9 |     23 |      12 |         18
+P5  |    11 |     20 |      11 |         14
+P6  |    15 |     17 |       7 |          9
+
+Average waiting: 8.33
+Average turnaround: 12.17
+
+Gantt chart:
+P1[0-2] P2[2-4] P1[4-6] P3[6-7] P2[7-9] P4[9-11] P5[11-13] P1[13-15] P6[15-17] P4[17-19] P5[19-20] P1[20-21] P4[21-23]
+
+========== PRIORITY ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |      7 |       0 |          7
+P2  |     7 |     11 |       5 |          9
+P6  |    11 |     13 |       3 |          5
+P4  |    13 |     19 |       8 |         14
+P3  |    19 |     20 |      16 |         17
+P5  |    20 |     23 |      14 |         17
+
+Average waiting: 7.67
+Average turnaround: 11.50
+
+Gantt chart:
+P1[0-7] P2[7-11] P6[11-13] P4[13-19] P3[19-20] P5[20-23]

@@ -1,0 +1,30 @@
+
+========== jobs.txt ==========
+FCFS       | Avg wait:    7.50 | Max wait:  13 | Avg turnaround:   11.33
+SJF        | Avg wait:    5.17 | Max wait:  12 | Avg turnaround:    9.00
+RR         | Avg wait:    8.33 | Max wait:  14 | Avg turnaround:   12.17
+Priority   | Avg wait:    7.67 | Max wait:  16 | Avg turnaround:   11.50
+
+========== mixed.txt ==========
+FCFS       | Avg wait:   93.28 | Max wait: 114 | Avg turnaround:  102.00
+SJF        | Avg wait:   32.67 | Max wait: 105 | Avg turnaround:   41.39
+RR         | Avg wait:   30.83 | Max wait: 106 | Avg turnaround:   39.56
+Priority   | Avg wait:   37.56 | Max wait: 119 | Avg turnaround:   46.28
+
+========== set1.txt ==========
+FCFS       | Avg wait:    8.75 | Max wait:  18 | Avg turnaround:   15.25
+SJF        | Avg wait:    7.75 | Max wait:  15 | Avg turnaround:   14.25
+RR         | Avg wait:   12.75 | Max wait:  15 | Avg turnaround:   19.25
+Priority   | Avg wait:   10.00 | Max wait:  18 | Avg turnaround:   16.50
+
+========== starve.txt ==========
+FCFS       | Avg wait:    5.70 | Max wait:   6 | Avg turnaround:    8.85
+SJF        | Avg wait:    2.85 | Max wait:  57 | Avg turnaround:    6.00
+RR         | Avg wait:    9.15 | Max wait:  10 | Avg turnaround:   12.30
+Priority   | Avg wait:    2.85 | Max wait:  57 | Avg turnaround:    6.00
+
+P1 waiting time:
+FCFS      : 0
+SJF       : 57
+RR        : 7
+Priority  : 57

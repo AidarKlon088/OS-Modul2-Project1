@@ -1,0 +1,29 @@
+========== JOBS ==========
+SRTF                 Avg wait=   4.33 Max wait=  12 Avg turnaround=   8.17 Segments=   8
+Priority             Avg wait=   7.50 Max wait=  16 Avg turnaround=  11.33 Segments=   8
+
+========== RR QUANTUM 1-10 ==========
+RR q=1               Avg wait=  29.78 Max wait= 107 Avg turnaround=  38.50 Segments= 157
+RR q=2               Avg wait=  30.83 Max wait= 106 Avg turnaround=  39.56 Segments=  83
+RR q=3               Avg wait=  33.28 Max wait= 108 Avg turnaround=  42.00 Segments=  60
+RR q=4               Avg wait=  32.50 Max wait= 105 Avg turnaround=  41.22 Segments=  46
+RR q=5               Avg wait=  35.61 Max wait= 105 Avg turnaround=  44.33 Segments=  39
+RR q=6               Avg wait=  37.39 Max wait= 105 Avg turnaround=  46.11 Segments=  36
+RR q=7               Avg wait=  41.11 Max wait= 107 Avg turnaround=  49.83 Segments=  33
+RR q=8               Avg wait=  42.78 Max wait= 106 Avg turnaround=  51.50 Segments=  31
+RR q=9               Avg wait=  45.89 Max wait= 108 Avg turnaround=  54.61 Segments=  29
+RR q=10              Avg wait=  47.00 Max wait= 105 Avg turnaround=  55.72 Segments=  28
+
+========== MIXED: MLFQ COMPARISON ==========
+SRTF                 Avg wait=  12.28 Max wait= 105 Avg turnaround=  21.00 Segments=  24
+Priority             Avg wait=  13.00 Max wait= 119 Avg turnaround=  21.72 Segments=  25
+RR q=2               Avg wait=  30.83 Max wait= 106 Avg turnaround=  39.56 Segments=  83
+MLFQ                 Avg wait=  24.83 Max wait= 105 Avg turnaround=  33.56 Segments=  60
+
+========== STARVATION ==========
+SRTF                 Avg wait=   2.85 Max wait=  57 Avg turnaround=   6.00 Segments=  20
+P1 waiting: 57
+Priority             Avg wait=   2.85 Max wait=  57 Avg turnaround=   6.00 Segments=  20
+P1 waiting: 57
+MLFQ                 Avg wait=  11.50 Max wait=  19 Avg turnaround=  14.65 Segments=  42
+P1 waiting: 12

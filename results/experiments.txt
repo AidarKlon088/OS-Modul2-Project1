@@ -1,0 +1,46 @@
+========== ROUND ROBIN QUANTUM ==========
+
+Dataset: jobs.txt
+RR q=1             Avg wait=   8.67 Max wait=  13 Avg turnaround=  12.50
+Context switches: 22
+RR q=2             Avg wait=   8.33 Max wait=  14 Avg turnaround=  12.17
+Context switches: 12
+RR q=4             Avg wait=   7.50 Max wait=  12 Avg turnaround=  11.33
+Context switches: 7
+RR q=8             Avg wait=   7.50 Max wait=  13 Avg turnaround=  11.33
+Context switches: 5
+RR q=16            Avg wait=   7.50 Max wait=  13 Avg turnaround=  11.33
+Context switches: 5
+
+Dataset: mixed.txt
+RR q=1             Avg wait=  29.78 Max wait= 107 Avg turnaround=  38.50
+Context switches: 156
+RR q=2             Avg wait=  30.83 Max wait= 106 Avg turnaround=  39.56
+Context switches: 82
+RR q=4             Avg wait=  32.50 Max wait= 105 Avg turnaround=  41.22
+Context switches: 45
+RR q=8             Avg wait=  42.78 Max wait= 106 Avg turnaround=  51.50
+Context switches: 30
+RR q=16            Avg wait=  60.56 Max wait= 106 Avg turnaround=  69.28
+Context switches: 23
+
+Dataset: set1.txt
+RR q=1             Avg wait=  12.50 Max wait=  15 Avg turnaround=  19.00
+Context switches: 25
+RR q=2             Avg wait=  12.75 Max wait=  15 Avg turnaround=  19.25
+Context switches: 13
+RR q=4             Avg wait=  11.75 Max wait=  17 Avg turnaround=  18.25
+Context switches: 7
+RR q=8             Avg wait=   9.75 Max wait=  17 Avg turnaround=  16.25
+Context switches: 4
+RR q=16            Avg wait=   8.75 Max wait=  18 Avg turnaround=  15.25
+Context switches: 3
+
+========== PRIORITY AGING ==========
+Priority           Avg wait=   2.85 Max wait=  57 Avg turnaround=   6.00
+Aging interval=3   Avg wait=   4.65 Max wait=  21 Avg turnaround=   7.80
+P1 waiting: 21
+Aging interval=5   Avg wait=   3.90 Max wait=  36 Avg turnaround=   7.05
+P1 waiting: 36
+Aging interval=10  Avg wait=   2.85 Max wait=  57 Avg turnaround=   6.00
+P1 waiting: 57

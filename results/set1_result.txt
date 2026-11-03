@@ -1,0 +1,59 @@
+
+Dataset: original_files/project1/set1.txt
+Processes: 4
+
+========== FCFS ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |      8 |       0 |          8
+P2  |     8 |     12 |       7 |         11
+P3  |    12 |     21 |      10 |         19
+P4  |    21 |     26 |      18 |         23
+
+Average waiting: 8.75
+Average turnaround: 15.25
+
+Gantt chart:
+P1[0-8] P2[8-12] P3[12-21] P4[21-26]
+
+========== SJF ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |      8 |       0 |          8
+P2  |     8 |     12 |       7 |         11
+P4  |    12 |     17 |       9 |         14
+P3  |    17 |     26 |      15 |         24
+
+Average waiting: 7.75
+Average turnaround: 14.25
+
+Gantt chart:
+P1[0-8] P2[8-12] P4[12-17] P3[17-26]
+
+========== ROUND ROBIN (q=2) ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |     22 |      14 |         22
+P2  |     2 |     12 |       7 |         11
+P3  |     4 |     26 |      15 |         24
+P4  |     8 |     23 |      15 |         20
+
+Average waiting: 12.75
+Average turnaround: 19.25
+
+Gantt chart:
+P1[0-2] P2[2-4] P3[4-6] P1[6-8] P4[8-10] P2[10-12] P3[12-14] P1[14-16] P4[16-18] P3[18-20] P1[20-22] P4[22-23] P3[23-25] P3[25-26]
+
+========== PRIORITY ==========
+PID | Start | Finish | Waiting | Turnaround
+-----------------------------------------------
+P1  |     0 |      8 |       0 |          8
+P3  |     8 |     17 |       6 |         15
+P2  |    17 |     21 |      16 |         20
+P4  |    21 |     26 |      18 |         23
+
+Average waiting: 10.00
+Average turnaround: 16.50
+
+Gantt chart:
+P1[0-8] P3[8-17] P2[17-21] P4[21-26]
